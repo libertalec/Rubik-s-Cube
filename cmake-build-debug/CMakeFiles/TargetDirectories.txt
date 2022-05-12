@@ -1,0 +1,3 @@
+C:/Users/stask/CLionProjects/Rubik-s-Cube/cmake-build-debug/CMakeFiles/Rubik__s_cube.dir
+C:/Users/stask/CLionProjects/Rubik-s-Cube/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/stask/CLionProjects/Rubik-s-Cube/cmake-build-debug/CMakeFiles/rebuild_cache.dir
