@@ -77,492 +77,493 @@ void AssemblingRubiksCube::assembling_cross() {
     //Первый этап - сборка неправильного белого креста
 
     //Начало сборки
-
-    if (!check_nn_cross()) {
-        //Если есть нужные нам кубики на передней грани (синий)
-        if (assembling.cube[0][1][2].lc_front == "white") {
-            if (assembling.cube[0][2][1].lc_up == "white") {
-                while (assembling.cube[0][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_counterclockwise('L');
-            } else {
-                assembling.turn_counterclockwise('L');
-            }
-        }
-        if (assembling.cube[2][1][2].lc_front == "white") {
-            if (assembling.cube[2][2][1].lc_up == "white") {
-                while (assembling.cube[2][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_right_clockwise();
-            } else {
-                assembling.turn_right_clockwise();
-            }
-        }
-        if (assembling.cube[1][2][2].lc_front == "white") {
-            assembling.turn_front_clockwise();
-            if (assembling.cube[2][2][1].lc_up == "white") {
-                while (assembling.cube[2][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_right_clockwise();
-                if (assembling.cube[1][2][2].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[1][2][2].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_counterclockwise('F');
-                    }
-
-
-                } else {
-                    assembling.turn_counterclockwise('F');
-                }
-            } else {
-                assembling.turn_right_clockwise();
-                if (assembling.cube[1][2][2].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[1][2][2].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_counterclockwise('F');
-                    }
-
-
-                } else {
-                    assembling.turn_counterclockwise('F');
-                }
-            }
-        }
-        if (assembling.cube[1][0][2].lc_front == "white") {
-            if (assembling.cube[1][2][2].lc_up == "white") {
-                while (assembling.cube[1][2][2].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_counterclockwise('F');
-            } else {
-                assembling.turn_counterclockwise('F');
-            }
-
-            if (assembling.cube[2][2][1].lc_up == "white") {
-                while (assembling.cube[2][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_right_clockwise();
-                if (assembling.cube[1][2][2].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[1][2][2].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_front_clockwise();
-                    }
-
-                } else {
-                    assembling.turn_front_clockwise();
-                }
-            } else {
-                assembling.turn_right_clockwise();
-                if (assembling.cube[1][2][2].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[1][2][2].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_front_clockwise();
-                    }
-
-                } else {
-                    assembling.turn_front_clockwise();
-                }
-            }
-        }
-
-        //Если нужные нам кубики есть на левой грани (оранжевая)
-        if (assembling.cube[0][1][0].lc_left == "white") {
-            if (assembling.cube[1][2][0].lc_up == "white") {
-                while (assembling.cube[1][2][0].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_counterclockwise('B');
-            } else {
-                assembling.turn_counterclockwise('B');
-            }
-        }
-
-        if (assembling.cube[0][1][2].lc_left == "white") {
-            if (assembling.cube[1][2][2].lc_up == "white") {
-                while (assembling.cube[1][2][2].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_front_clockwise();
-            } else {
-                assembling.turn_front_clockwise();
-            }
-        }
-        if (assembling.cube[0][2][1].lc_left == "white") {
-            assembling.turn_left_clockwise();
-            if (assembling.cube[1][2][2].lc_up == "white") {
-                while (assembling.cube[1][2][2].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_front_clockwise();
+    for(int k = 0;k<24;k++) {
+        if (!check_nn_cross()) {
+            //Если есть нужные нам кубики на передней грани (синий)
+            if (assembling.cube[0][1][2].lc_front == "white") {
                 if (assembling.cube[0][2][1].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[0][2][1].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_counterclockwise('L');
+                    while (assembling.cube[0][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
                     }
-
-
-                } else {
                     assembling.turn_counterclockwise('L');
-                }
-            } else {
-                assembling.turn_front_clockwise();
-                if (assembling.cube[0][2][1].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[0][2][1].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_counterclockwise('L');
-                    }
-
-
                 } else {
                     assembling.turn_counterclockwise('L');
                 }
             }
-        }
-        if (assembling.cube[0][0][1].lc_left == "white") {
-            if (assembling.cube[0][2][1].lc_up == "white") {
-                while (assembling.cube[0][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_counterclockwise('L');
-            } else {
-                assembling.turn_counterclockwise('L');
-            }
-
-            if (assembling.cube[1][2][2].lc_up == "white") {
-                while (assembling.cube[1][2][2].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_front_clockwise();
-                if (assembling.cube[0][2][1].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[0][2][1].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_left_clockwise();
-                    }
-
-                } else {
-                    assembling.turn_left_clockwise();
-                }
-            } else {
-                assembling.turn_front_clockwise();
-                if (assembling.cube[0][2][1].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[0][2][1].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_left_clockwise();
-                    }
-
-                } else {
-                    assembling.turn_left_clockwise();
-                }
-            }
-        }
-        //Если нужные нам кубики есть на правой грани (красная)
-        if (assembling.cube[2][1][2].lc_right == "white") {
-            if (assembling.cube[1][2][2].lc_up == "white") {
-                while (assembling.cube[1][2][2].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_counterclockwise('F');
-            } else {
-                assembling.turn_counterclockwise('F');
-            }
-        }
-
-        if (assembling.cube[2][1][0].lc_right == "white") {
-            if (assembling.cube[1][2][0].lc_up == "white") {
-                while (assembling.cube[1][2][0].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_back_clockwise();
-            } else {
-                assembling.turn_back_clockwise();
-            }
-        }
-        if (assembling.cube[2][2][1].lc_right == "white") {
-            assembling.turn_right_clockwise();
-            if (assembling.cube[1][2][0].lc_up == "white") {
-                while (assembling.cube[1][2][0].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_back_clockwise();
+            if (assembling.cube[2][1][2].lc_front == "white") {
                 if (assembling.cube[2][2][1].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[2][2][1].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_counterclockwise('R');
+                    while (assembling.cube[2][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
                     }
-
-
-                } else {
-                    assembling.turn_counterclockwise('R');
-                }
-            } else {
-                assembling.turn_back_clockwise();
-                if (assembling.cube[2][2][1].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[2][2][1].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_counterclockwise('R');
-                    }
-
-
-                } else {
-                    assembling.turn_counterclockwise('R');
-                }
-            }
-        }
-        if (assembling.cube[2][0][1].lc_right == "white") {
-            if (assembling.cube[2][2][1].lc_up == "white") {
-                while (assembling.cube[2][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_counterclockwise('R');
-            } else {
-                assembling.turn_counterclockwise('R');
-            }
-
-            if (assembling.cube[1][2][0].lc_up == "white") {
-                while (assembling.cube[1][2][0].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_back_clockwise();
-                if (assembling.cube[2][2][1].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[2][2][1].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_right_clockwise();
-                    }
-
-                } else {
                     assembling.turn_right_clockwise();
-                }
-            } else {
-                assembling.turn_back_clockwise();
-                if (assembling.cube[2][2][1].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[2][2][1].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_right_clockwise();
-                    }
-
                 } else {
                     assembling.turn_right_clockwise();
                 }
             }
+            if (assembling.cube[1][2][2].lc_front == "white") {
+                assembling.turn_front_clockwise();
+                if (assembling.cube[2][2][1].lc_up == "white") {
+                    while (assembling.cube[2][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_right_clockwise();
+                    if (assembling.cube[1][2][2].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[1][2][2].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_counterclockwise('F');
+                        }
+
+
+                    } else {
+                        assembling.turn_counterclockwise('F');
+                    }
+                } else {
+                    assembling.turn_right_clockwise();
+                    if (assembling.cube[1][2][2].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[1][2][2].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_counterclockwise('F');
+                        }
+
+
+                    } else {
+                        assembling.turn_counterclockwise('F');
+                    }
+                }
+            }
+            if (assembling.cube[1][0][2].lc_front == "white") {
+                if (assembling.cube[1][2][2].lc_up == "white") {
+                    while (assembling.cube[1][2][2].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_counterclockwise('F');
+                } else {
+                    assembling.turn_counterclockwise('F');
+                }
+
+                if (assembling.cube[2][2][1].lc_up == "white") {
+                    while (assembling.cube[2][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_right_clockwise();
+                    if (assembling.cube[1][2][2].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[1][2][2].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_front_clockwise();
+                        }
+
+                    } else {
+                        assembling.turn_front_clockwise();
+                    }
+                } else {
+                    assembling.turn_right_clockwise();
+                    if (assembling.cube[1][2][2].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[1][2][2].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_front_clockwise();
+                        }
+
+                    } else {
+                        assembling.turn_front_clockwise();
+                    }
+                }
+            }
+
+            //Если нужные нам кубики есть на левой грани (оранжевая)
+            if (assembling.cube[0][1][0].lc_left == "white") {
+                if (assembling.cube[1][2][0].lc_up == "white") {
+                    while (assembling.cube[1][2][0].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_counterclockwise('B');
+                } else {
+                    assembling.turn_counterclockwise('B');
+                }
+            }
+
+            if (assembling.cube[0][1][2].lc_left == "white") {
+                if (assembling.cube[1][2][2].lc_up == "white") {
+                    while (assembling.cube[1][2][2].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_front_clockwise();
+                } else {
+                    assembling.turn_front_clockwise();
+                }
+            }
+            if (assembling.cube[0][2][1].lc_left == "white") {
+                assembling.turn_left_clockwise();
+                if (assembling.cube[1][2][2].lc_up == "white") {
+                    while (assembling.cube[1][2][2].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_front_clockwise();
+                    if (assembling.cube[0][2][1].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[0][2][1].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_counterclockwise('L');
+                        }
+
+
+                    } else {
+                        assembling.turn_counterclockwise('L');
+                    }
+                } else {
+                    assembling.turn_front_clockwise();
+                    if (assembling.cube[0][2][1].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[0][2][1].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_counterclockwise('L');
+                        }
+
+
+                    } else {
+                        assembling.turn_counterclockwise('L');
+                    }
+                }
+            }
+            if (assembling.cube[0][0][1].lc_left == "white") {
+                if (assembling.cube[0][2][1].lc_up == "white") {
+                    while (assembling.cube[0][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_counterclockwise('L');
+                } else {
+                    assembling.turn_counterclockwise('L');
+                }
+
+                if (assembling.cube[1][2][2].lc_up == "white") {
+                    while (assembling.cube[1][2][2].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_front_clockwise();
+                    if (assembling.cube[0][2][1].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[0][2][1].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_left_clockwise();
+                        }
+
+                    } else {
+                        assembling.turn_left_clockwise();
+                    }
+                } else {
+                    assembling.turn_front_clockwise();
+                    if (assembling.cube[0][2][1].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[0][2][1].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_left_clockwise();
+                        }
+
+                    } else {
+                        assembling.turn_left_clockwise();
+                    }
+                }
+            }
+            //Если нужные нам кубики есть на правой грани (красная)
+            if (assembling.cube[2][1][2].lc_right == "white") {
+                if (assembling.cube[1][2][2].lc_up == "white") {
+                    while (assembling.cube[1][2][2].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_counterclockwise('F');
+                } else {
+                    assembling.turn_counterclockwise('F');
+                }
+            }
+
+            if (assembling.cube[2][1][0].lc_right == "white") {
+                if (assembling.cube[1][2][0].lc_up == "white") {
+                    while (assembling.cube[1][2][0].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_back_clockwise();
+                } else {
+                    assembling.turn_back_clockwise();
+                }
+            }
+            if (assembling.cube[2][2][1].lc_right == "white") {
+                assembling.turn_right_clockwise();
+                if (assembling.cube[1][2][0].lc_up == "white") {
+                    while (assembling.cube[1][2][0].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_back_clockwise();
+                    if (assembling.cube[2][2][1].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[2][2][1].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_counterclockwise('R');
+                        }
+
+
+                    } else {
+                        assembling.turn_counterclockwise('R');
+                    }
+                } else {
+                    assembling.turn_back_clockwise();
+                    if (assembling.cube[2][2][1].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[2][2][1].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_counterclockwise('R');
+                        }
+
+
+                    } else {
+                        assembling.turn_counterclockwise('R');
+                    }
+                }
+            }
+            if (assembling.cube[2][0][1].lc_right == "white") {
+                if (assembling.cube[2][2][1].lc_up == "white") {
+                    while (assembling.cube[2][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_counterclockwise('R');
+                } else {
+                    assembling.turn_counterclockwise('R');
+                }
+
+                if (assembling.cube[1][2][0].lc_up == "white") {
+                    while (assembling.cube[1][2][0].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_back_clockwise();
+                    if (assembling.cube[2][2][1].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[2][2][1].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_right_clockwise();
+                        }
+
+                    } else {
+                        assembling.turn_right_clockwise();
+                    }
+                } else {
+                    assembling.turn_back_clockwise();
+                    if (assembling.cube[2][2][1].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[2][2][1].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_right_clockwise();
+                        }
+
+                    } else {
+                        assembling.turn_right_clockwise();
+                    }
+                }
+            }
+
+            //Если есть нужные нам кубики на задней грани (зеленый)
+            if (assembling.cube[0][1][0].lc_back == "white") {
+                if (assembling.cube[0][2][1].lc_up == "white") {
+                    while (assembling.cube[0][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_left_clockwise();
+                } else {
+                    assembling.turn_left_clockwise();
+                }
+            }
+            if (assembling.cube[2][1][0].lc_back == "white") {
+                if (assembling.cube[2][2][1].lc_up == "white") {
+                    while (assembling.cube[2][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_counterclockwise('R');
+                } else {
+                    assembling.turn_counterclockwise('R');
+                }
+            }
+            if (assembling.cube[1][2][0].lc_back == "white") {
+                assembling.turn_back_clockwise();
+                if (assembling.cube[0][2][1].lc_up == "white") {
+                    while (assembling.cube[0][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_left_clockwise();
+                    if (assembling.cube[1][2][0].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[1][2][0].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_counterclockwise('B');
+                        }
+
+
+                    } else {
+                        assembling.turn_counterclockwise('B');
+                    }
+                } else {
+                    assembling.turn_left_clockwise();
+                    if (assembling.cube[1][2][0].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[1][2][0].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_counterclockwise('B');
+                        }
+
+
+                    } else {
+                        assembling.turn_counterclockwise('B');
+                    }
+                }
+            }
+            if (assembling.cube[1][0][0].lc_back == "white") {
+                if (assembling.cube[1][2][0].lc_up == "white") {
+                    while (assembling.cube[1][2][0].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_counterclockwise('B');
+                } else {
+                    assembling.turn_counterclockwise('B');
+                }
+
+                if (assembling.cube[0][2][1].lc_up == "white") {
+                    while (assembling.cube[0][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_left_clockwise();
+                    if (assembling.cube[1][2][0].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[1][2][0].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_back_clockwise();
+                        }
+
+                    } else {
+                        assembling.turn_back_clockwise();
+                    }
+                } else {
+                    assembling.turn_left_clockwise();
+                    if (assembling.cube[1][2][0].lc_up == "white") {
+                        if (!check_nn_cross()) {
+                            while (assembling.cube[1][2][0].lc_up == "white") {
+                                assembling.turn_up_clockwise();
+                            }
+                            assembling.turn_back_clockwise();
+                        }
+
+                    } else {
+                        assembling.turn_back_clockwise();
+                    }
+                }
+            }
+
+            //Если есть нужные нам кубики на нижней грани (белый)
+            if (assembling.cube[0][0][1].lc_down == "white") {
+                if (assembling.cube[0][2][1].lc_up == "white") {
+                    while (assembling.cube[0][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_counterclockwise('L');
+                    assembling.turn_counterclockwise('L');
+                } else {
+                    assembling.turn_counterclockwise('L');
+                    assembling.turn_counterclockwise('L');
+                }
+            }
+            if (assembling.cube[2][0][1].lc_down == "white") {
+                if (assembling.cube[2][2][1].lc_up == "white") {
+                    while (assembling.cube[2][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_right_clockwise();
+                    assembling.turn_right_clockwise();
+                } else {
+                    assembling.turn_right_clockwise();
+                    assembling.turn_right_clockwise();
+                }
+            }
+            if (assembling.cube[1][0][2].lc_down == "white") {
+                assembling.turn_down_clockwise();
+                if (assembling.cube[2][2][1].lc_up == "white") {
+                    while (assembling.cube[2][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_right_clockwise();
+                    assembling.turn_right_clockwise();
+                    assembling.turn_counterclockwise('D');
+                } else {
+                    assembling.turn_right_clockwise();
+                    assembling.turn_right_clockwise();
+                    assembling.turn_counterclockwise('D');
+                }
+            }
+            if (assembling.cube[1][0][0].lc_down == "white") {
+                assembling.turn_counterclockwise('D');
+                if (assembling.cube[2][2][1].lc_up == "white") {
+                    while (assembling.cube[2][2][1].lc_up == "white") {
+                        assembling.turn_up_clockwise();
+                    }
+                    assembling.turn_right_clockwise();
+                    assembling.turn_right_clockwise();
+                    assembling.turn_down_clockwise();
+                } else {
+                    assembling.turn_right_clockwise();
+                    assembling.turn_right_clockwise();
+                    assembling.turn_down_clockwise();
+                }
+            }
         }
 
-        //Если есть нужные нам кубики на задней грани (зеленый)
-        if (assembling.cube[0][1][0].lc_back == "white") {
-            if (assembling.cube[0][2][1].lc_up == "white") {
-                while (assembling.cube[0][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_left_clockwise();
-            } else {
-                assembling.turn_left_clockwise();
+        //Собираем правильный крест
+        if (check_nn_cross()) {
+            //Сначала берем кубик на позиции 2
+            while ((assembling.cube[1][1][0].lc_back != assembling.cube[1][2][0].lc_back) ||
+                   assembling.cube[1][2][0].lc_up != "white") {
+                assembling.turn_up_clockwise();
             }
-        }
-        if (assembling.cube[2][1][0].lc_back == "white") {
-            if (assembling.cube[2][2][1].lc_up == "white") {
-                while (assembling.cube[2][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_counterclockwise('R');
-            } else {
-                assembling.turn_counterclockwise('R');
-            }
-        }
-        if (assembling.cube[1][2][0].lc_back == "white") {
             assembling.turn_back_clockwise();
-            if (assembling.cube[0][2][1].lc_up == "white") {
-                while (assembling.cube[0][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_left_clockwise();
-                if (assembling.cube[1][2][0].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[1][2][0].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_counterclockwise('B');
-                    }
+            assembling.turn_back_clockwise();
 
-
-                } else {
-                    assembling.turn_counterclockwise('B');
-                }
-            } else {
-                assembling.turn_left_clockwise();
-                if (assembling.cube[1][2][0].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[1][2][0].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_counterclockwise('B');
-                    }
-
-
-                } else {
-                    assembling.turn_counterclockwise('B');
-                }
+            //Берем кубик на позиции 4
+            while ((assembling.cube[2][1][1].lc_right != assembling.cube[2][2][1].lc_right) ||
+                   assembling.cube[2][2][1].lc_up != "white") {
+                assembling.turn_up_clockwise();
             }
-        }
-        if (assembling.cube[1][0][0].lc_back == "white") {
-            if (assembling.cube[1][2][0].lc_up == "white") {
-                while (assembling.cube[1][2][0].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_counterclockwise('B');
-            } else {
-                assembling.turn_counterclockwise('B');
+            assembling.turn_right_clockwise();
+            assembling.turn_right_clockwise();
+
+            //Берём кубик на позиции 6
+            while ((assembling.cube[1][1][2].lc_front != assembling.cube[1][2][2].lc_front) ||
+                   assembling.cube[1][2][2].lc_up != "white") {
+                assembling.turn_up_clockwise();
             }
+            assembling.turn_front_clockwise();
+            assembling.turn_front_clockwise();
 
-            if (assembling.cube[0][2][1].lc_up == "white") {
-                while (assembling.cube[0][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_left_clockwise();
-                if (assembling.cube[1][2][0].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[1][2][0].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_back_clockwise();
-                    }
-
-                } else {
-                    assembling.turn_back_clockwise();
-                }
-            } else {
-                assembling.turn_left_clockwise();
-                if (assembling.cube[1][2][0].lc_up == "white") {
-                    if (!check_nn_cross()) {
-                        while (assembling.cube[1][2][0].lc_up == "white") {
-                            assembling.turn_up_clockwise();
-                        }
-                        assembling.turn_back_clockwise();
-                    }
-
-                } else {
-                    assembling.turn_back_clockwise();
-                }
+            //Берём кубик на позиции 8
+            while ((assembling.cube[0][1][1].lc_left != assembling.cube[0][2][1].lc_left) ||
+                   assembling.cube[0][2][1].lc_up != "white") {
+                assembling.turn_up_clockwise();
             }
-        }
+            assembling.turn_left_clockwise();
+            assembling.turn_left_clockwise();
 
-        //Если есть нужные нам кубики на нижней грани (белый)
-        if (assembling.cube[0][0][1].lc_down == "white") {
-            if (assembling.cube[0][2][1].lc_up == "white") {
-                while (assembling.cube[0][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_counterclockwise('L');
-                assembling.turn_counterclockwise('L');
-            } else {
-                assembling.turn_counterclockwise('L');
-                assembling.turn_counterclockwise('L');
-            }
         }
-        if (assembling.cube[2][0][1].lc_down == "white") {
-            if (assembling.cube[2][2][1].lc_up == "white") {
-                while (assembling.cube[2][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_right_clockwise();
-                assembling.turn_right_clockwise();
-            } else {
-                assembling.turn_right_clockwise();
-                assembling.turn_right_clockwise();
-            }
-        }
-        if (assembling.cube[1][0][2].lc_down == "white") {
-            assembling.turn_down_clockwise();
-            if (assembling.cube[2][2][1].lc_up == "white") {
-                while (assembling.cube[2][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_right_clockwise();
-                assembling.turn_right_clockwise();
-                assembling.turn_counterclockwise('D');
-            } else {
-                assembling.turn_right_clockwise();
-                assembling.turn_right_clockwise();
-                assembling.turn_counterclockwise('D');
-            }
-        }
-        if (assembling.cube[1][0][0].lc_down == "white") {
-            assembling.turn_counterclockwise('D');
-            if (assembling.cube[2][2][1].lc_up == "white") {
-                while (assembling.cube[2][2][1].lc_up == "white") {
-                    assembling.turn_up_clockwise();
-                }
-                assembling.turn_right_clockwise();
-                assembling.turn_right_clockwise();
-                assembling.turn_down_clockwise();
-            } else {
-                assembling.turn_right_clockwise();
-                assembling.turn_right_clockwise();
-                assembling.turn_down_clockwise();
-            }
-        }
-    }
-
-    //Собираем правильный крест
-    if (check_nn_cross()) {
-        //Сначала берем кубик на позиции 2
-        while ((assembling.cube[1][1][0].lc_back != assembling.cube[1][2][0].lc_back) ||
-               assembling.cube[1][2][0].lc_up != "white") {
-            assembling.turn_up_clockwise();
-        }
-        assembling.turn_back_clockwise();
-        assembling.turn_back_clockwise();
-
-        //Берем кубик на позиции 4
-        while ((assembling.cube[2][1][1].lc_right != assembling.cube[2][2][1].lc_right) ||
-               assembling.cube[2][2][1].lc_up != "white") {
-            assembling.turn_up_clockwise();
-        }
-        assembling.turn_right_clockwise();
-        assembling.turn_right_clockwise();
-
-        //Берём кубик на позиции 6
-        while ((assembling.cube[1][1][2].lc_front != assembling.cube[1][2][2].lc_front) ||
-               assembling.cube[1][2][2].lc_up != "white") {
-            assembling.turn_up_clockwise();
-        }
-        assembling.turn_front_clockwise();
-        assembling.turn_front_clockwise();
-
-        //Берём кубик на позиции 8
-        while ((assembling.cube[0][1][1].lc_left != assembling.cube[0][2][1].lc_left) ||
-               assembling.cube[0][2][1].lc_up != "white") {
-            assembling.turn_up_clockwise();
-        }
-        assembling.turn_left_clockwise();
-        assembling.turn_left_clockwise();
-
     }
 
 }
@@ -1262,74 +1263,76 @@ void AssemblingRubiksCube::second_layer() {
         side_selection('R');
         side_selection('G');
     }
-    //Проверка на неправильные позиции
-    if (!((assembling.cube[0][1][2].lc_front == assembling.cube[1][1][2].lc_front) &&
-          (assembling.cube[0][1][2].lc_left == assembling.cube[0][1][1].lc_left))) {
-        assembling.turn_counterclockwise('L');
-        assembling.turn_counterclockwise('U');
-        assembling.turn_left_clockwise();
-        assembling.turn_up_clockwise();
-        assembling.turn_front_clockwise();
-        assembling.turn_up_clockwise();
-        assembling.turn_counterclockwise('F');
-        assembling.turn_counterclockwise('U');
-        for (int i = 0; i < 4; i++) {
-            side_selection('B');
-            side_selection('O');
-            side_selection('R');
-            side_selection('G');
+    for (int k = 0; k < 4; k++) {
+        //Проверка на неправильные позиции
+        if (!((assembling.cube[0][1][2].lc_front == assembling.cube[1][1][2].lc_front) &&
+              (assembling.cube[0][1][2].lc_left == assembling.cube[0][1][1].lc_left))) {
+            assembling.turn_counterclockwise('L');
+            assembling.turn_counterclockwise('U');
+            assembling.turn_left_clockwise();
+            assembling.turn_up_clockwise();
+            assembling.turn_front_clockwise();
+            assembling.turn_up_clockwise();
+            assembling.turn_counterclockwise('F');
+            assembling.turn_counterclockwise('U');
+            for (int i = 0; i < 4; i++) {
+                side_selection('B');
+                side_selection('O');
+                side_selection('R');
+                side_selection('G');
+            }
         }
-    }
-    if (!((assembling.cube[2][1][2].lc_front == assembling.cube[1][1][2].lc_front) &&
-          (assembling.cube[2][1][2].lc_right == assembling.cube[2][1][1].lc_right))) {
-        assembling.turn_counterclockwise('F');
-        assembling.turn_counterclockwise('U');
-        assembling.turn_front_clockwise();
-        assembling.turn_up_clockwise();
-        assembling.turn_right_clockwise();
-        assembling.turn_up_clockwise();
-        assembling.turn_counterclockwise('R');
-        assembling.turn_counterclockwise('U');
-        for (int i = 0; i < 4; i++) {
-            side_selection('B');
-            side_selection('O');
-            side_selection('R');
-            side_selection('G');
+        if (!((assembling.cube[2][1][2].lc_front == assembling.cube[1][1][2].lc_front) &&
+              (assembling.cube[2][1][2].lc_right == assembling.cube[2][1][1].lc_right))) {
+            assembling.turn_counterclockwise('F');
+            assembling.turn_counterclockwise('U');
+            assembling.turn_front_clockwise();
+            assembling.turn_up_clockwise();
+            assembling.turn_right_clockwise();
+            assembling.turn_up_clockwise();
+            assembling.turn_counterclockwise('R');
+            assembling.turn_counterclockwise('U');
+            for (int i = 0; i < 4; i++) {
+                side_selection('B');
+                side_selection('O');
+                side_selection('R');
+                side_selection('G');
+            }
         }
-    }
-    if (!((assembling.cube[2][1][0].lc_back == assembling.cube[1][1][0].lc_back) &&
-          (assembling.cube[2][1][0].lc_right == assembling.cube[2][1][1].lc_right))) {
-        assembling.turn_counterclockwise('R');
-        assembling.turn_counterclockwise('U');
-        assembling.turn_right_clockwise();
-        assembling.turn_up_clockwise();
-        assembling.turn_back_clockwise();
-        assembling.turn_up_clockwise();
-        assembling.turn_counterclockwise('B');
-        assembling.turn_counterclockwise('U');
-        for (int i = 0; i < 4; i++) {
-            side_selection('B');
-            side_selection('O');
-            side_selection('R');
-            side_selection('G');
-        }
+        if (!((assembling.cube[2][1][0].lc_back == assembling.cube[1][1][0].lc_back) &&
+              (assembling.cube[2][1][0].lc_right == assembling.cube[2][1][1].lc_right))) {
+            assembling.turn_counterclockwise('R');
+            assembling.turn_counterclockwise('U');
+            assembling.turn_right_clockwise();
+            assembling.turn_up_clockwise();
+            assembling.turn_back_clockwise();
+            assembling.turn_up_clockwise();
+            assembling.turn_counterclockwise('B');
+            assembling.turn_counterclockwise('U');
+            for (int i = 0; i < 4; i++) {
+                side_selection('B');
+                side_selection('O');
+                side_selection('R');
+                side_selection('G');
+            }
 
-    }
-    if (!((assembling.cube[0][1][0].lc_back == assembling.cube[1][1][0].lc_back) &&
-          (assembling.cube[0][1][0].lc_left == assembling.cube[0][1][1].lc_left))) {
-        assembling.turn_counterclockwise('B');
-        assembling.turn_counterclockwise('U');
-        assembling.turn_back_clockwise();
-        assembling.turn_up_clockwise();
-        assembling.turn_left_clockwise();
-        assembling.turn_up_clockwise();
-        assembling.turn_counterclockwise('L');
-        assembling.turn_counterclockwise('U');
-        for (int i = 0; i < 4; i++) {
-            side_selection('B');
-            side_selection('O');
-            side_selection('R');
-            side_selection('G');
+        }
+        if (!((assembling.cube[0][1][0].lc_back == assembling.cube[1][1][0].lc_back) &&
+              (assembling.cube[0][1][0].lc_left == assembling.cube[0][1][1].lc_left))) {
+            assembling.turn_counterclockwise('B');
+            assembling.turn_counterclockwise('U');
+            assembling.turn_back_clockwise();
+            assembling.turn_up_clockwise();
+            assembling.turn_left_clockwise();
+            assembling.turn_up_clockwise();
+            assembling.turn_counterclockwise('L');
+            assembling.turn_counterclockwise('U');
+            for (int i = 0; i < 4; i++) {
+                side_selection('B');
+                side_selection('O');
+                side_selection('R');
+                side_selection('G');
+            }
         }
     }
 }
@@ -1880,17 +1883,17 @@ CRubicsCube AssemblingRubiksCube::assemble() {
 
 bool AssemblingRubiksCube::invariance(CRubicsCube one) {
     AssemblingRubiksCube check(one);
-    if(one.cube[1][1][2].lc_front!="blue"){
+    if (one.cube[1][1][2].lc_front != "blue") {
         return false;
-    }else if(one.cube[2][1][1].lc_right!="red"){
+    } else if (one.cube[2][1][1].lc_right != "red") {
         return false;
-    }else if(one.cube[1][1][0].lc_back!="green"){
+    } else if (one.cube[1][1][0].lc_back != "green") {
         return false;
-    }else if(one.cube[0][1][1].lc_left!="orange"){
+    } else if (one.cube[0][1][1].lc_left != "orange") {
         return false;
-    }else if(one.cube[1][2][1].lc_up!="yellow"){
+    } else if (one.cube[1][2][1].lc_up != "yellow") {
         return false;
-    }else if(one.cube[1][0][1].lc_down!="white"){
+    } else if (one.cube[1][0][1].lc_down != "white") {
         return false;
     }
     one = check.assemble();

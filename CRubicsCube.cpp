@@ -667,7 +667,7 @@ void CRubicsCube::read_file() {
 
 void CRubicsCube::random_turn() {
     int k = 0;
-    for(int i=0;i<5;i++){
+    for(int i=0;i<10;i++){
         k = rand() % 10;
         if (k==0) {
             turn_front_clockwise();
