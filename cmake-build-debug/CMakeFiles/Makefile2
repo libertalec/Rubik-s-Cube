@@ -80,12 +80,12 @@ clean: CMakeFiles/Rubik__s_cube.dir/clean
 CMakeFiles/Rubik__s_cube.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\stask\CLionProjects\Rubik-s-Cube\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Rubik__s_cube"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\stask\CLionProjects\Rubik-s-Cube\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target Rubik__s_cube"
 .PHONY : CMakeFiles/Rubik__s_cube.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Rubik__s_cube.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stask\CLionProjects\Rubik-s-Cube\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stask\CLionProjects\Rubik-s-Cube\cmake-build-debug\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Rubik__s_cube.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stask\CLionProjects\Rubik-s-Cube\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Rubik__s_cube.dir/rule

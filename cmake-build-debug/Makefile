@@ -128,6 +128,78 @@ Rubik__s_cube/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/build
 .PHONY : Rubik__s_cube/fast
 
+AssemblingRubiksCube.obj: AssemblingRubiksCube.cpp.obj
+.PHONY : AssemblingRubiksCube.obj
+
+# target to build an object file
+AssemblingRubiksCube.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.obj
+.PHONY : AssemblingRubiksCube.cpp.obj
+
+AssemblingRubiksCube.i: AssemblingRubiksCube.cpp.i
+.PHONY : AssemblingRubiksCube.i
+
+# target to preprocess a source file
+AssemblingRubiksCube.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.i
+.PHONY : AssemblingRubiksCube.cpp.i
+
+AssemblingRubiksCube.s: AssemblingRubiksCube.cpp.s
+.PHONY : AssemblingRubiksCube.s
+
+# target to generate assembly for a file
+AssemblingRubiksCube.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.s
+.PHONY : AssemblingRubiksCube.cpp.s
+
+CRubicsCube.obj: CRubicsCube.cpp.obj
+.PHONY : CRubicsCube.obj
+
+# target to build an object file
+CRubicsCube.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.obj
+.PHONY : CRubicsCube.cpp.obj
+
+CRubicsCube.i: CRubicsCube.cpp.i
+.PHONY : CRubicsCube.i
+
+# target to preprocess a source file
+CRubicsCube.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.i
+.PHONY : CRubicsCube.cpp.i
+
+CRubicsCube.s: CRubicsCube.cpp.s
+.PHONY : CRubicsCube.s
+
+# target to generate assembly for a file
+CRubicsCube.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.s
+.PHONY : CRubicsCube.cpp.s
+
+CSmallCube.obj: CSmallCube.cpp.obj
+.PHONY : CSmallCube.obj
+
+# target to build an object file
+CSmallCube.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.obj
+.PHONY : CSmallCube.cpp.obj
+
+CSmallCube.i: CSmallCube.cpp.i
+.PHONY : CSmallCube.i
+
+# target to preprocess a source file
+CSmallCube.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.i
+.PHONY : CSmallCube.cpp.i
+
+CSmallCube.s: CSmallCube.cpp.s
+.PHONY : CSmallCube.s
+
+# target to generate assembly for a file
+CSmallCube.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubik__s_cube.dir\build.make CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.s
+.PHONY : CSmallCube.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +233,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Rubik__s_cube
+	@echo ... AssemblingRubiksCube.obj
+	@echo ... AssemblingRubiksCube.i
+	@echo ... AssemblingRubiksCube.s
+	@echo ... CRubicsCube.obj
+	@echo ... CRubicsCube.i
+	@echo ... CRubicsCube.s
+	@echo ... CSmallCube.obj
+	@echo ... CSmallCube.i
+	@echo ... CSmallCube.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

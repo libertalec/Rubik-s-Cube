@@ -80,6 +80,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/stask/CLionProjects/Rubik-s-Cube/AssemblingRubiksCube.cpp">
+			<Option target="Rubik__s_cube"/>
+		</Unit>
+		<Unit filename="C:/Users/stask/CLionProjects/Rubik-s-Cube/AssemblingRubiksCube.h">
+			<Option target="Rubik__s_cube"/>
+		</Unit>
+		<Unit filename="C:/Users/stask/CLionProjects/Rubik-s-Cube/CRubicsCube.cpp">
+			<Option target="Rubik__s_cube"/>
+		</Unit>
+		<Unit filename="C:/Users/stask/CLionProjects/Rubik-s-Cube/CRubicsCube.h">
+			<Option target="Rubik__s_cube"/>
+		</Unit>
+		<Unit filename="C:/Users/stask/CLionProjects/Rubik-s-Cube/CSmallCube.cpp">
+			<Option target="Rubik__s_cube"/>
+		</Unit>
+		<Unit filename="C:/Users/stask/CLionProjects/Rubik-s-Cube/CSmallCube.h">
+			<Option target="Rubik__s_cube"/>
+		</Unit>
 		<Unit filename="C:/Users/stask/CLionProjects/Rubik-s-Cube/main.cpp">
 			<Option target="Rubik__s_cube"/>
 		</Unit>

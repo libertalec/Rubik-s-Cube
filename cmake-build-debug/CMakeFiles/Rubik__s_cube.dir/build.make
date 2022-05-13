@@ -82,19 +82,67 @@ CMakeFiles/Rubik__s_cube.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rubik__s_cube.dir/main.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stask\CLionProjects\Rubik-s-Cube\main.cpp -o CMakeFiles\Rubik__s_cube.dir\main.cpp.s
 
+CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.obj: CMakeFiles/Rubik__s_cube.dir/flags.make
+CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.obj: ../CSmallCube.cpp
+CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.obj: CMakeFiles/Rubik__s_cube.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stask\CLionProjects\Rubik-s-Cube\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.obj -MF CMakeFiles\Rubik__s_cube.dir\CSmallCube.cpp.obj.d -o CMakeFiles\Rubik__s_cube.dir\CSmallCube.cpp.obj -c C:\Users\stask\CLionProjects\Rubik-s-Cube\CSmallCube.cpp
+
+CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stask\CLionProjects\Rubik-s-Cube\CSmallCube.cpp > CMakeFiles\Rubik__s_cube.dir\CSmallCube.cpp.i
+
+CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stask\CLionProjects\Rubik-s-Cube\CSmallCube.cpp -o CMakeFiles\Rubik__s_cube.dir\CSmallCube.cpp.s
+
+CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.obj: CMakeFiles/Rubik__s_cube.dir/flags.make
+CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.obj: ../AssemblingRubiksCube.cpp
+CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.obj: CMakeFiles/Rubik__s_cube.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stask\CLionProjects\Rubik-s-Cube\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.obj -MF CMakeFiles\Rubik__s_cube.dir\AssemblingRubiksCube.cpp.obj.d -o CMakeFiles\Rubik__s_cube.dir\AssemblingRubiksCube.cpp.obj -c C:\Users\stask\CLionProjects\Rubik-s-Cube\AssemblingRubiksCube.cpp
+
+CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stask\CLionProjects\Rubik-s-Cube\AssemblingRubiksCube.cpp > CMakeFiles\Rubik__s_cube.dir\AssemblingRubiksCube.cpp.i
+
+CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stask\CLionProjects\Rubik-s-Cube\AssemblingRubiksCube.cpp -o CMakeFiles\Rubik__s_cube.dir\AssemblingRubiksCube.cpp.s
+
+CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.obj: CMakeFiles/Rubik__s_cube.dir/flags.make
+CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.obj: ../CRubicsCube.cpp
+CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.obj: CMakeFiles/Rubik__s_cube.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stask\CLionProjects\Rubik-s-Cube\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.obj -MF CMakeFiles\Rubik__s_cube.dir\CRubicsCube.cpp.obj.d -o CMakeFiles\Rubik__s_cube.dir\CRubicsCube.cpp.obj -c C:\Users\stask\CLionProjects\Rubik-s-Cube\CRubicsCube.cpp
+
+CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stask\CLionProjects\Rubik-s-Cube\CRubicsCube.cpp > CMakeFiles\Rubik__s_cube.dir\CRubicsCube.cpp.i
+
+CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stask\CLionProjects\Rubik-s-Cube\CRubicsCube.cpp -o CMakeFiles\Rubik__s_cube.dir\CRubicsCube.cpp.s
+
 # Object files for target Rubik__s_cube
 Rubik__s_cube_OBJECTS = \
-"CMakeFiles/Rubik__s_cube.dir/main.cpp.obj"
+"CMakeFiles/Rubik__s_cube.dir/main.cpp.obj" \
+"CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.obj" \
+"CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.obj" \
+"CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.obj"
 
 # External object files for target Rubik__s_cube
 Rubik__s_cube_EXTERNAL_OBJECTS =
 
 Rubik__s_cube.exe: CMakeFiles/Rubik__s_cube.dir/main.cpp.obj
+Rubik__s_cube.exe: CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.obj
+Rubik__s_cube.exe: CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.obj
+Rubik__s_cube.exe: CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.obj
 Rubik__s_cube.exe: CMakeFiles/Rubik__s_cube.dir/build.make
 Rubik__s_cube.exe: CMakeFiles/Rubik__s_cube.dir/linklibs.rsp
 Rubik__s_cube.exe: CMakeFiles/Rubik__s_cube.dir/objects1.rsp
 Rubik__s_cube.exe: CMakeFiles/Rubik__s_cube.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\stask\CLionProjects\Rubik-s-Cube\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Rubik__s_cube.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\stask\CLionProjects\Rubik-s-Cube\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Rubik__s_cube.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Rubik__s_cube.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

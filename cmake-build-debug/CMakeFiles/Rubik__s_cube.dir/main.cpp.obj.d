@@ -129,6 +129,7 @@ CMakeFiles/Rubik__s_cube.dir/main.cpp.obj: \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/istream \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
+ C:\Users\stask\CLionProjects\Rubik-s-Cube\CSmallCube.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/vector \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
@@ -137,6 +138,8 @@ CMakeFiles/Rubik__s_cube.dir/main.cpp.obj: \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+ C:\Users\stask\CLionProjects\Rubik-s-Cube\AssemblingRubiksCube.h \
+ C:\Users\stask\CLionProjects\Rubik-s-Cube\CRubicsCube.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/fstream \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32/bits/basic_file.h \

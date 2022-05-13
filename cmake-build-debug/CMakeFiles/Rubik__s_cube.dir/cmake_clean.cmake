@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.obj"
+  "CMakeFiles/Rubik__s_cube.dir/AssemblingRubiksCube.cpp.obj.d"
+  "CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.obj"
+  "CMakeFiles/Rubik__s_cube.dir/CRubicsCube.cpp.obj.d"
+  "CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.obj"
+  "CMakeFiles/Rubik__s_cube.dir/CSmallCube.cpp.obj.d"
   "CMakeFiles/Rubik__s_cube.dir/main.cpp.obj"
   "CMakeFiles/Rubik__s_cube.dir/main.cpp.obj.d"
   "Rubik__s_cube.exe"
