@@ -26,6 +26,8 @@ int main() {
             std::cout << std::endl;
             std::cout << "random combination of the cube(random)";
             std::cout << std::endl;
+            std::cout << "invariance";
+            std::cout << std::endl;
         } else if (command == "print") {
             one.printCube();
         } else if (command == "turn_up") {
@@ -59,8 +61,12 @@ int main() {
         } else if (command == "assemble") {
             AssemblingRubiksCube check(one);
             one = check.assemble();
-        }else if(command == "random"){
+        } else if (command == "random") {
             one.random_turn();
+        } else if (command == "invariance") {
+            AssemblingRubiksCube check(one);
+            std::cout << check.invariance(one);
+            std::cout << std::endl;
         }
     }
 

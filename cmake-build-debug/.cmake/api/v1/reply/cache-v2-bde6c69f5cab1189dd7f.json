@@ -155,7 +155,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/stask/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/cmake/win/bin/cmake.exe"
+			"value" : "C:/Users/stask/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/bin/cmake/win/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -167,7 +167,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/stask/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/cmake/win/bin/cpack.exe"
+			"value" : "C:/Users/stask/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/bin/cmake/win/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -179,7 +179,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/stask/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/cmake/win/bin/ctest.exe"
+			"value" : "C:/Users/stask/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/bin/cmake/win/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -1091,7 +1091,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/stask/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/cmake/win/share/cmake-3.22"
+			"value" : "C:/Users/stask/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/bin/cmake/win/share/cmake-3.22"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",

@@ -1,3 +1,3 @@
-C:\Users\stask\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\221.5080.224\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\Rubik__s_cube.dir/objects.a
+C:\Users\stask\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\221.5591.52\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\Rubik__s_cube.dir/objects.a
 C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe qc CMakeFiles\Rubik__s_cube.dir/objects.a @CMakeFiles\Rubik__s_cube.dir\objects1.rsp
 C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\Rubik__s_cube.dir/objects.a -Wl,--no-whole-archive -o Rubik__s_cube.exe -Wl,--out-implib,libRubik__s_cube.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Rubik__s_cube.dir\linklibs.rsp
