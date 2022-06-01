@@ -9,7 +9,7 @@ public:
     AssemblingRubiksCube(CRubicsCube one);
 
 
-    bool check_nn_cross(); //Проверка на неправильный кубик
+    bool check_nn_cross(); //Проверка на неправильный крест
     bool check_cross(); //Проверка на уже собранный белый крест
 
     void assembling_cross();//Сборка неправильного креста
